@@ -6,17 +6,17 @@
 <form style="text-align:center" method="POST" action="{{route('newadvert')}}">
     @csrf
     <div class="form-group card-body">
-        <div class="form-group"  style="margin-top:20px">
+        {{-- <div class="form-group"  style="margin-top:20px">
             <lable for="category"> دسته بندی</lable>
             <select name="Category" class="form-control">
                @foreach($categories as $category)
                <option >{{$category->CategoryName}}</option>
                @endforeach
                  </select>
-            </div>
+            </div> --}}
           <div class="form-group"  style="margin-top:20px">
-         <label for="advertname">نام کالا</label>
-      <input type="text" class="form-control" id="advertname" name="advertname">
+         <label for="title">نام کالا</label>
+      <input type="text" class="form-control" id="title" name="title">
           </div>
              <br>
                  <label for="describtion">توصیف کالا</label>

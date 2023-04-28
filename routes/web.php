@@ -29,16 +29,17 @@ Route::get('/db', [DbController::class, 'showusers'] );
 Route::get('/dbinsertuser', [DbController::class, 'insertuser'] );
 Route::get('/dbinsertadvert', [DbController::class, 'insertadvert'] );
 
+
+
+Route::get('/user.show', [UserController::class, 'show'])->name('userslist');
+
+
 Route::get('/advert.create.show', [AdvertController::class, 'shownewadvert'])->name('newadvertshow');
 Route::post('/advert.create', [AdvertController::class, 'create'])->name('newadvert');
-
-
-
 Route::get('/advert.show', [AdvertController::class, 'show'])->name('advertslist');
-// Route::get('/usersadverts.show', [AdvertController::class, 'showUA'])->name('usersadvertslist');
-Route::get('/user.show', [UserController::class, 'show'])->name('userslist');
 Route::get('/advert.edit', [AdvertController::class, 'edit'])->name('editadvert');
 Route::get('/advert.edit.show', [AdvertController::class, 'showedit'])->name('editadvertshow');
+// Route::get('/usersadverts.show', [AdvertController::class, 'showUA'])->name('usersadvertslist');
 
 
 

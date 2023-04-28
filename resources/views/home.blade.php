@@ -7,7 +7,6 @@ homepage
 @endsection
 @section('main')
 
-$session=session()->get('name');
 
 
 <section class="py-5">
