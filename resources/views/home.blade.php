@@ -3,7 +3,7 @@
 homepage
 @endsection
 @section('titr')
-<h6 style="text-align:right">صفحه اصلی</h6>
+<h6 style="text-align:right">صفحه اصلی </h6>
 @endsection
 @section('main')
 
