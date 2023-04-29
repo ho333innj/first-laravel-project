@@ -41,21 +41,21 @@ class AdvertController extends Controller
         //     $Advert = Advert::create([ 'Title'=>$name, 'Describtion' => $describtion , 'price'=>$price , 'category'=>$category]);
         //     session()->put('name' , 'اطلاعات وارد شد');
         // return redirect('/');
-        $request->validate([
-            'title'=>'required|unique:adverts|max:100',
-            'body'=>'required',
-        ] , [
-            'title.required'=>'عنوان باید وارد شود',
-            'title.unique'=>'عنوان تکراری است',
-            'body.required'=>'محتوای آگهی را وارد کنید',
-        ]
-        );
+        // $request->validate([
+        //     'title'=>'required|unique:adverts|max:100',
+        //     'body'=>'required',
+        // ] , [
+        //     'title.required'=>'عنوان باید وارد شود',
+        //     'title.unique'=>'عنوان تکراری است',
+        //     'body.required'=>'محتوای آگهی را وارد کنید',
+        // ]
+        // );
         $advert=new Advert;
         $advert->title=$request->title;
         $advert->describtion=$request->describtion;
         $advert->price=$request->price;
         $advert->save();
-        return redirect('advertslist');
+        return redirect('advert.show');
         // ->with('message' , 'آگهی اضافه شد');
     }
 
@@ -71,7 +71,7 @@ class AdvertController extends Controller
 
         $advert->save();
 
-        
+
     }
 
 

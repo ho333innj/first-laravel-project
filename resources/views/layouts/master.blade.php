@@ -16,8 +16,7 @@
     <body>
         <style>
             body  {
-              background-image: url("/img/2201968.jpg");
-              background-color: #cccccc;
+              background-color: #b6c2d1;
             }
             </style>
 
